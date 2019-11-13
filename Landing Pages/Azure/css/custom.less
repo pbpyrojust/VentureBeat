@@ -1,0 +1,343 @@
+// Mixins ////////////////
+.ani-500 {
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+.custom-red {
+	color: #ed2427;
+}
+.custom-red-dk {
+	color: #af1618;
+}
+
+@custom-red:	#ed2427;
+@custom-red-dk:	#af1618;
+
+
+
+
+// Typography ////////////////
+a {
+	.custom-red;
+	font-size: 100%;
+}
+a:hover {
+	.custom-red-dk;
+}
+
+ol, ul {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: "Open Sans", Sans-serif;
+    color: #686868;
+}
+ol {
+	margin-bottom: 24px;
+}
+.text-section h2 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.shadow {
+	text-shadow: 0 0 5px #000000;
+}
+.pullout {
+	/*border-top: 1px solid #d7d7d7; */
+    /* border-bottom: 1px solid #d7d7d7; */
+    padding: 25px 195px;
+    font-size: 170%;
+    text-align: center;
+    font-weight: 500;
+}
+@media screen and (max-width:768px) {
+	.pullout {
+		padding: 15px;
+	}
+}
+@media screen and (max-width:640px) {
+	.at-resp-share-element .at-share-btn .at-icon-wrapper {
+		line-height: 22px !important;
+	    height: 22px !important;
+	    width: 22px !important;
+	    svg {
+		    width: 22px !important;
+			height: 22px !important;
+	    }
+	}
+}
+// Main Navigation ////////////////
+.navbar-default .container-fluid.navbar-fixed-top {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    height: 70px;
+    border-bottom: 1px solid #ed2427;
+}
+.client-branding {
+	text-align: center;
+	line-height: 110%;
+	a {
+		display: inline-block;
+		margin-top: 5px;
+	}
+	span {
+		font-size: 12px;
+	}
+}
+.client-logo > img {
+    height: 28px;
+    margin-left: 4px;
+}
+.navbar-header a {
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+	.container-fluid > .navbar-header {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.venturebeat-logo {
+		padding-left: 0;
+	}
+	.navbar-header a {
+	    display: block;
+	}
+	.client-branding {
+		margin-top: -7px;
+	}
+}
+
+@media screen and (max-width:580px) {
+	.navbar-brand {
+		margin-left: 0px!important;
+	}
+}
+
+@media screen and (max-width:480px) {	
+	.navbar-default .container-fluid.navbar-fixed-top,
+	.navbar {
+		height: 70px;
+	}
+	.client-branding {
+		margin-top: -5px;
+	}
+	.navbar-brand > img {
+	    height: 40px;
+	}
+}
+
+
+
+// Social Navbar ////////////////
+.social-bar {
+	padding: 0;
+	margin-top: 0;
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		float: right;
+		padding-left: 0;
+		li {
+			float: left;
+			width: 39px;
+			height: 40px;
+			margin-left: 10px;
+			.ani-500;
+			a {
+				background-image: url(../images/social.png);
+				background-position: -5px -6px;
+				width: 100%;
+				height: 100%;
+				display: block;
+				.ani-500;
+				&:hover {
+					background-position: -5px 44px;
+					.ani-500;
+				}
+				&.twitter {
+					background-position: -65px -6px;
+					&:hover {
+					background-position: -65px 44px;
+					.ani-500;
+				}
+				}
+				&.linkdin {
+					background-position: 44px -6px;
+					&:hover {
+					background-position: 44px 44px;
+					.ani-500;
+				}
+				}
+			}
+		}
+	}
+	.at-resp-share-element .at-share-btn .at-label {
+		display: none;
+	}
+}
+
+@media screen and (max-width:760px) {
+	.social-bar {
+		text-align: right;
+		margin-top: -50px;
+	}
+	.social-bar ul li {
+	    width: 24px;
+	    height: 24px;
+	    margin-left: 5px;
+	    a.facebook {
+			background-position: -12px -13px;
+			&:hover {
+				background-position: -12px 37px;
+			}
+		}
+	    a.twitter {
+			background-position: -72px -13px;
+			&:hover {
+				background-position: -72px 37px;
+			}
+		}
+		a.linkdin {
+			background-position: -133px -13px;
+			&:hover {
+				background-position: -133px 37px;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:580px) {
+	.social-bar {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.social-bar ul li {
+	    width: 18px;
+	    height: 18px;  
+	     a.facebook {
+			background-position: -15px -16px;
+			&:hover {
+				background-position: -15px 34px;
+			}
+		}
+	    a.twitter {
+			background-position: -75px -16px;
+			&:hover {
+				background-position: -75px 34px;
+			}
+		}
+		a.linkdin {
+			background-position: -135px -16px;
+			&:hover {
+				background-position: -135px 34px;
+			}
+		}  
+	}
+}
+
+
+.parallax-mirror {
+	background-color: black;
+	.parallax-slider {
+		opacity: .6;
+	}
+}
+
+// Layout ////////////////
+.text-section {
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+#section-1 {
+	height: 60vh;
+}
+.image-section {
+    height: 65vh;
+    h1 {
+	    margin-top: 70px;
+	    text-shadow: 0 0 50px #000000;
+    }
+}
+
+.img-right {
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-top: 8px;
+}
+.img-left {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-top: 8px;
+}
+footer h3 {
+	line-height: 150%;
+}
+@media screen and (max-width:799px) {
+	.img-right, 
+	.img-left {
+		float: none;
+		width: 90%;
+		height: auto;
+		margin: 0 5% 30px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.image-section h1 {
+	    margin-top: -20px;
+	}
+}
+
+
+@media screen and (max-width:600px) {
+	.image-section h1 {
+	    font-size: 40px;
+	}
+}
+@media screen and (max-width:340px) {
+	.image-section h1 {
+	    font-size: 30px;
+	}
+}
+@media screen and (min-width:768px) {
+	.image-section h1 {
+	    padding: 0 40px;
+	}
+	footer h3 {
+		padding: 0 50px;
+	}
+}
+@media screen and (min-width:1024px) {
+	footer h3 {
+		padding: 0 120px;
+	}
+}
+@media screen and (min-width:1200px) {
+	footer h3 {
+		padding: 0 250px;
+	}
+}
+
+@media screen and (min-width:1400px) {
+	.image-section h1 {
+	    padding: 0 120px;
+	}
+	
+}
+@media screen and (min-width:1600px) {
+	.image-section h1 {
+	    padding: 0;
+	}
+	footer h3 {
+		padding: 0 390px;
+	}
+}

@@ -174,7 +174,7 @@ img.mobile {
 	    font-size: 10px;
 	}
 	.client-logo > img {
-		max-width: 65px;
+		max-width: 100%;
 		height: auto;
 	}
 	.venturebeat-logo {
@@ -394,7 +394,8 @@ footer h3 {
   }
 }
 @media screen and (max-width: 768px) {
-  .image-section h1 {
+  .image-section h1,
+  .image-section h2 {
     margin-top: -20px;
   }
   #section-9.image-section h1 {
@@ -409,7 +410,8 @@ footer h3 {
 	}
 }
 @media screen and (max-width: 600px) {
-  .image-section h1 {
+  .image-section h1,
+  .image-section h2 {
     font-size: 40px;
   }
   	#section-9 .center-text {
@@ -425,13 +427,15 @@ footer h3 {
 	}
 }
 @media screen and (max-width: 340px) {
-  .image-section h1 {
+  .image-section h1,
+  .image-section h2 {
     font-size: 30px;
   }
   
 }
 @media screen and (min-width: 768px) {
-  .image-section h1 {
+  .image-section h1,
+  .image-section h2 {
     padding: 0 40px;
   }
   footer h3 {
@@ -449,12 +453,14 @@ footer h3 {
   }
 }
 @media screen and (min-width: 1400px) {
-  .image-section h1 {
+  .image-section h1,
+  .image-section h2 {
     padding: 0 120px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .image-section h1 {
+  .image-section h1,
+  .image-section h2 {
     padding: 0;
   }
   footer h3 {

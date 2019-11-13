@@ -358,7 +358,8 @@ img.mobile {
 		display: none;
 	}
 }
-.image-section h1 {
+.image-section h1,
+.image-section h2 {
   margin-top: 70px;
   text-shadow: 0 0 20px #000000;
 }

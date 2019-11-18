@@ -2,6 +2,9 @@
 	z-index: 10 !important;
 }
 .image-section.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	z-index: 100;
 }
 .ani-500 {
